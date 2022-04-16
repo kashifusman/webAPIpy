@@ -1,6 +1,4 @@
 from datetime import datetime
-import email
-from optparse import Option
 from turtle import title
 from typing import Optional
 from pydantic import BaseModel,EmailStr,conint
