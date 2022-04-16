@@ -2,9 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 # -------------------- these are for db connection
-from psycopg2.extras import RealDictCursor
-import psycopg2 
-import time
 
 
 from .config import settings
