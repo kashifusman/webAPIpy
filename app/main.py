@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 # to fetching the column names and converting into dict object
 from .routers import post,user, auth, vote
-from .config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -32,7 +31,7 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to my API"}
+    return {"message": "Welcome to my API Kashif>usman"}
 
 
 
