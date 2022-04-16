@@ -13,10 +13,14 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 #change origins to array
+# origins = ["https://wwww.google.com"]
+# now if you add google.com your applciation will alow request from google.com
+origins = ["*"]
+#this will allow to all
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

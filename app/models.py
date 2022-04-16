@@ -9,6 +9,9 @@ from .database import Base
 # Alembic use for change schema or any migration tool or delete table
 # alchemy doesnt make changes once table is already exist
 
+# Tool to update the columns and update databse structure
+# Alembic is the Migration tool to update the database
+# https://alembic.sqlalchemy.org/en/latest/
 
 class Post(Base):
     __tablename__ = "posts"
